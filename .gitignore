@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 ### Java template
 # Compiled class file
@@ -31,3 +32,20 @@ hs_err_pid*
 *.iml
 out
 gen
+=======
+tmp*
+*.bak
+*.diff
+target/
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+.tags*
+build_info.properties
+test.*
+*.log
+release
+.DS_Store
+>>>>>>> c299536c54386c4bb6079862dd62630d83327440
