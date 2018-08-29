@@ -2,13 +2,21 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.dao.AppInfoDao">
+<mapper namespace="com.example.demo.com.example.demo.dao.AppInfoDao">
     <insert id="insert">
-        insert INTO user_info(
-        user_name,
-        password)
+        insert INTO app_info(
+        appName,
+        packageName,
+        downloadUrl,
+        version,
+        source,
+        pushSdk,
+        fileLocation,
+        status
+        createTime
+        )
         VALUES (
-        #{userName},#{passWord}
+        #{appName},#{packageName},#{downloadUrl},#{version},#{source},#{pushSdk},#{fileLocation},#{status},#{createTime}
         )
     </insert>
     <!--<insert id="batchInsert">-->

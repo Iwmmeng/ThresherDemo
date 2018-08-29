@@ -8,6 +8,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
 	<typeAliases>
-		<package name="com.wang.test.entities"/>
+		<package name="com.example.demo.entities"/>
 	</typeAliases>
 </configuration>	

@@ -1,0 +1,15 @@
+tmp*
+*.bak
+*.diff
+target/
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+.tags*
+build_info.properties
+test.*
+*.log
+release
+.DS_Store
