@@ -14,6 +14,8 @@ public interface AppInfoDao {
     int update(AppInfo appInfo);
     int deleteById(@Param("id") int id);
     AppInfo findByPackageNameAndVersion(@Param("packageName") String packageName, @Param("version") String version);
+    AppInfo getOneAppByStatus(@Param("status")int status);
+
 
 
 
