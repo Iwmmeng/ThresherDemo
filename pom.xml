@@ -82,6 +82,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>miui-sec</groupId>
+			<artifactId>AXMLPrinter2</artifactId>
+			<version>1.0</version>
+		</dependency>
 
 		<!-- common libs -->
 		<dependency>

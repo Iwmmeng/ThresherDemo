@@ -6,11 +6,13 @@ import com.example.demo.entities.AppStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @author wangmeng
  * @date 18/8/28
  */
+@Service
 public class AppInfoService {
 
     // TODO: 18/8/28 这个日志跟log4j的关系？？怎么选择会比较好？？
