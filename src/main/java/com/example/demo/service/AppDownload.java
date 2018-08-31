@@ -29,6 +29,21 @@ public class AppDownload {
     @Autowired
     private Environment env;
 
+    /***
+     *启动schedule线程，定时从数据库中拉取appURL进行下载
+     */
+
+    // TODO: 18/8/31 这个每次都是下载一个app，怎么不用挑选app来下载呢？有的可能是已经下载了的，有的是正在下载的，
+    // 没有下载的列表里面，选取排名第一的嘛？
+
+
+
+
+
+
+
+
+
 
     /**
     * 根据AppInfo信息，下载文件
