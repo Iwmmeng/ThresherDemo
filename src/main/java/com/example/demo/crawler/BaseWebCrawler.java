@@ -15,6 +15,7 @@ import java.util.List;
 
 
 // TODO: 18/8/31  component 这个注解是干啥用的？？？？
+// FIXME: spring依赖注入，只有加了这个注释，才能以单例形式被spring加载
 @Component
 public abstract class BaseWebCrawler {
     private static final String STORE_APP_LIST_URL_PROPERTIES="store.app.list.url";

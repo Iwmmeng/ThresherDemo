@@ -24,11 +24,13 @@ public class HuaweiStore extends BaseWebCrawler{
     @Override
     public void process() {
         // TODO: 18/8/31 方法的调用，都不用对象吗？直接用？？？？这个怎么理解会比较好？？
+        // FIXME: 这个是这个对象的方法啊，继承于BaseWebCrawler
         List<String> urlList = getAllListUrl();
         for(String url:urlList){
             LOGGER.info("GET app list url :{}",url);
 
 //// TODO: 18/8/31 解析一个html页面，获取其中的字段，不会写，没有太看明白
+            // FIXME 网上搜搜就行，就是解析一颗Document树
 
 
 

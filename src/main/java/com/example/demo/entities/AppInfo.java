@@ -21,14 +21,17 @@ public class AppInfo {
      * 5->apk 失败
      * */
 
-    // TODO: 18/8/28 这个状态是所有失败状态的一个统称吗？不需要具体区分是哪一个步骤的失败吗？？？？
+    // TODO: 18/8/28 这个状态是所有失败状态的一个统称吗？不需要具体区分是哪一个步骤的失败吗？？？？\\
     // TODO: 18/8/28 这些状态都有对应的数字，状态数字的映射是在哪里呢？
+    // FIXME: 就是任务的执行状态，表示任务执行到了什么进度。失败没有区分具体是哪一个环节失败，失败的都是直接重试，一般解析失败，就是下载的包有问题。
+    // FIXME: 数字的映射就是上面的注释，没有存数据库。这叫那个"约定优于配置"，简单来就行。
 
     private Integer status;
     private Date createTime;
 
 
     // TODO: 18/8/28   IDE默认生成的set都是void形式的，但是ET的set都是AppInfo类型的，区别是啥？
+    // FIXME: set返回AppInfo类型可以节省代码，现在比较流行。比如：setId(1).setAppName("小米推送")
     public Integer getId() {
         return id;
     }
@@ -112,7 +115,7 @@ public class AppInfo {
 
 
     // TODO: 18/8/28 需要加上this吗？？
-
+    // FIXME: 这个可以不加，主要是为了和方法内的参数区分，比如setStatus就必须加
     @Override
     public String toString(){
         return "id: "+ id +"appName:" +appName +"packageName"+packageName+"downloadUrl:"+downloadUrl+"source:"+source;

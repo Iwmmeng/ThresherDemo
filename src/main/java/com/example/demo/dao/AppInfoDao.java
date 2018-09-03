@@ -9,7 +9,8 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface AppInfoDao {
     
-    //// TODO: 18/8/28 insert 方法已经在mybatis.xml文件中配置，但是并没有搜索到，why？还缺少什么配置？？？ 
+    //// TODO: 18/8/28 insert 方法已经在mybatis.xml文件中配置，但是并没有搜索到，why？还缺少什么配置？？？
+    // FIXME 需要配合spring boot使用，至少也得指定使用哪个配置文件。具体怎么用，需要看spring boot和mybatis的文档，现在一般用annotation的方式了，配置文件的方式用的少了
     int insert(AppInfo appInfo);
     int update(AppInfo appInfo);
     int deleteById(@Param("id") int id);
